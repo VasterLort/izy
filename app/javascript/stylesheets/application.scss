@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/bootstrap";
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#home-page {
+  background-color: #92D2F2;
+  background: url('../../assets/images/about.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#about {
+  min-height: 60vh;
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+#general-info {
+  font-size: 30px;
+  text-align: left; 
+  padding-top: 25px;
+  font-family: sans-serif;
+}
+
+#logo-img {
+  margin-top: -130px;
+}
+
+#footer {
+  background-color: #252223;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 50px;
+}
