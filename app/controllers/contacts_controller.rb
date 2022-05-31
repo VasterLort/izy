@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   def create
+    binding.pry
     @contact = Contact.new(post_params)
     if @contact.save
       redirect_to root_path, flash: { success: 'Message sent!' }

@@ -1,0 +1,50 @@
+.container-fluid.m-0.p-0{ style: "word-wrap: break-word;" }
+  .full-height.home-page.p-4
+    = image_tag 'logo.png', class: 'img-fluid mt-5'
+  
+  .about.p-3.p-md-5
+    .header.pb-3 ABOUT US
+    .row.justify-content-center
+      .col-lg-8
+        %ul.general-info.list-group.list-group-flush.pt-5
+          %li.list-group-item
+            IZY is a IT solution provider and consulting company delivering deep domain expertise, digital 
+            expertise, and innovation to help enterprises leverage digital processes and excel in their business.
+          %li.list-group-item
+            We will endeavor to continue to inspire, transform, and create synergies that shape the digital world and ensure shared prosperity for all.
+      .col-lg-4{ style: 'padding-top: 35px;' }
+        = image_tag 'stock.jpg', class: 'img-fluid', style: 'border-radius: 15px;'
+
+  .row.justify-content-center.p-4
+    .header.pb-3 TECHNOLOGIES
+    .col-lg-3
+      = image_tag 'ruby.png', height: '250px', class: 'm-2'
+      %h3.ml-md-4.mr-md-4 Ruby
+    .col-lg-3
+      = image_tag 'react.png', height: '250px', class: 'm-2'
+      %h3.ml-md-4.mr-md-4 React
+    .col-lg-3
+      = image_tag 'vue.png', height: '250px', class: 'm-2'
+      %h3.ml-md-4.mr-md-4 Vue
+    .col-lg-3
+      = image_tag 'node.png', height: '250px', class: 'm-2'
+      %h3.ml-md-4.mr-md-4 NodeJS
+
+  .bg-info.p-4
+    .row.justify-content-center.mt-3.mb-3
+      .col-lg-4
+        %h2 Have Any Questions?
+        %p  Contact us by filling out the information below
+        = render 'layouts/messages'
+        = form_with url: contacts_url, method: :post do |f|
+          .form-group.text-left
+            = f.email_field :email, class: 'form-control', placeholder: 'Enter Your Email', required: 'required'
+            = f.text_area :message, rows: 5, class: 'form-control mt-3', placeholder: 'Enter Your Message', required: 'required'
+          %br
+          = f.submit 'Send Message', class: 'btn btn-primary'
+
+  .footer-section.p-4
+    %footer.text-light.p-4
+      = link_to "Privacy Policy", '#', class: 'text-warning'
+      %br
+      %small &copy; 2022, ООО АйЗетУай

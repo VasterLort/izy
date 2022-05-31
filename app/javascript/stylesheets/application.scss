@@ -8,31 +8,26 @@
   color: #2c3e50;
 }
 
-#home-page {
+.home-page {
   background-color: #92D2F2;
-  background: url('../../assets/images/about.jpg') no-repeat center center;
+  background: url('../../assets/images/main_page_1.jpg') no-repeat center center;
   background-size: cover;
   min-height: 100vh;
 }
 
-#about {
+.about {
   min-height: 60vh;
   background-color: #ffffff;
   background-size: cover;
 }
 
-#general-info {
+.general-info {
   font-size: 30px;
   text-align: left; 
-  padding-top: 25px;
   font-family: sans-serif;
 }
 
-#logo-img {
-  margin-top: -130px;
-}
-
-#footer {
+.footer-section {
   background-color: #252223;
 }
 
@@ -41,7 +36,7 @@
 }
 
 .header {
-  text-align: center; 
-  font-weight: bold; 
   font-size: 50px;
+  font-weight: bold;
+  text-align: center; 
 }
